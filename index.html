@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تحدي الأمن السيبراني</title>
+    <title>تقدر تتحدى المخترق؟</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,7 +12,7 @@
             padding: 0;
             background-color: #040038;
             direction: rtl;
-            overflow-y: scroll; /* السماح بالنزول أعلى وأسفل الصفحة */
+            overflow-y: scroll; 
         }
         #container {
             padding: 20px;
@@ -45,18 +45,17 @@
         <div id="countdown" class="hidden">3</div>
         <div id="formContainer">
             <h1 id="challengeMessage">اهزم المخترق</h1>
-            <!-- النموذج الذي تم إضافته -->
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc9H8FIEE8Bv-m-Hu_xqHW5PSxmkTFq2E7XbblvRPsYh50CZw/viewform?embedded=true" width="640" height="3343" frameborder="0" marginheight="0" marginwidth="0">جارٍ التحميل…</iframe>
         </div>
     </div>
 
     <script>
-        // إخفاء الرسالة "جاهز للتحدي؟" بعد ثانية واحدة
+        
         setTimeout(() => {
             document.getElementById("readyMessage").style.display = "none";
             document.getElementById("countdown").classList.remove("hidden");
 
-            // العد التنازلي من 3 إلى 1
+            
             let countdown = 3;
             const countdownElement = document.getElementById("countdown");
             const interval = setInterval(() => {
@@ -68,7 +67,7 @@
                     document.getElementById("formContainer").style.display = "block";
                 }
             }, 1000);
-        }, 1000); // انتظار ثانية واحدة
+        }, 1000); 
     </script>
 </body>
 </html>
